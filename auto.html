@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>Biz KT - 자동견적</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script src="./js/includeHTML.js"></script>
+  </head>
+  <body>
+      <div class="site-section">
+          <div class="row no-gutters">
+            <div class="col-sm-12 mt-0 mb-3 text-center">
+                <h2>자동견적</h2>
+                <p>설치하실 장소를 선택해주세요.</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a class="btn btn-light ">사무실</a>
+                    <a class="btn btn-light">매장</a>
+                    <a class="btn btn-light">모텔/호텔</a>
+                    <a class="btn btn-light">가정집</a>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="list-group">
+                    <div class="list-group-item mb-2 ">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1"><span class="badge badge-primary">step1</span> 인터넷 희망속도는 ? </h5>
+                        
+                      </div>
+                        <div class="row mt-2">
+                            <div class="col-5">
+                                <select class="form-control" name="internet_speed" id="internet_speed" size="1">
+                                    <option value="" selected>::인터넷속도선택::</option>
+                                    <option value="100M+">100M+와이파이</option>
+                                    <option value="500M+">500M+와이파이</option>
+                                    <option value="1G+">1G+와이파이</option>
+                                    <option value="100M">100M</option>
+                                    <option value="500M">500M</option>
+                                    <option value="1G">1G</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="fa" value="Y" id="q1">
+                                    <label for="q1" class="form-check-label" title="본인명의로 인터넷1회선 사용중인 경우 추가 할인된 패밀리상품으로 신청 가능합니다.">패밀리상품으로신청</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item mb-2 ">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1"><span class="badge badge-primary">step2</span> TV가 필요하신가요 ?</h5>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-5">
+                                <select class="form-control" name="tv" id="tv">
+                                    <option value="">::필요없음::</option>
+                                    <option value="1">OTV(베이직)_243 ch</option>
+                                    <option value="2">OTV(라이트)_248 ch</option>
+                                    <option value="3">OTV(에센스)_273 ch</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item mb-2 ">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1"><span class="badge badge-primary">step3</span> 추가 TV가 필요하신가요 ?</h5>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="add_tv" value="0" id="r1" checked>
+                                    <label for="r1" class="form-check-label">필요없음</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="add_tv" value="1" id="r2" >
+                                    <label for="r2" class="form-check-label">1대 더 필요</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="add_tv" value="2" id="r3">
+                                    <label for="r3" class="form-check-label">2대 더 필요</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item mb-2 ">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1"><span class="badge badge-primary">step4</span> 유선전화 필요하신가요 ?</h5>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-5">
+                                <select class="form-control" name="fax_in" id="fax_in" style="margin-right: 8px;">
+                                    <option value="">::요금제선택::</option>
+                                    <option value="1">홈무한3000</option>
+                                    <option value="2">소호무한3000</option>
+                                    <option value="3">팩스전용</option>
+                                </select>
+                            </div>
+                            <div class="col-5">
+                                <select class="form-control" name="fax_ea" id="fax_ea" style="width: 120px; background: url('/img/bottom_arrow.png') no-repeat 97% 50%; background-color: #fff">
+                                    <option value="0">::회선수::</option>
+                                    <option value="1">1대</option>
+                                    <option value="2">2대</option>
+                                    <option value="3">3대</option>
+                                    <option value="4">4대</option>
+                                    <option value="5">5대</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item mb-2 ">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1"><span class="badge badge-primary">step5</span> 전화 부가서비스를 선택해주세요.</h5>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="TEL_V" value="발신번호표시" id="x1">
+                                    <label class="form-check-label" for="x1" title="내 유선전화에 전화를 건 상대방의 번호가 표시되는 서비스 입니다.">발신번호표시</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="TEL_V" value="통화중대기" id="x2">
+                                    <label class="form-check-label" for="x2" title="통화중일때 통화중으로 걸리지 않고 통화중 대기상태서비스입니다.">통화중대기</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="TEL_V" value="착신통화전환" id="x3">
+                                    <label class="form-check-label" for="x3" title="시간 별 또는 특정번호로 걸려오는 전화에 대해 착신전환 서비스를 제공합니다.">착신통화전환</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item mb-2 ">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1"><span class="badge badge-primary">step6</span> POS 기기 필요하신가요 ?</h5>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-5">
+                                <select class="form-control" name="pos" id="pos">
+                                    <option value="">::POS형선택::</option>
+                                    <option value="1">카드단말_SMT-T283</option>
+                                    <option value="2">POS_HIT9</option>
+                                </select>
+                            </div>
+                            <div class="col-7">
+                                <p>
+                                    (인터넷 요금 월 <font class="text-danger">-3,300원 </font>추가 할인반영)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="list-group-item mb-2 ">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1"><span class="badge badge-primary">step7</span> 보안카메라가 필요하신가요 ?</h5>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-5">
+                                <select class="form-control" name="carmera_in" id="carmera_in">
+                                    <option value="">::보안카메라선택::</option>
+                                    <option value="1">GiGAeyes i_slim1대</option>
+                                    <option value="2">GiGAeyes i_slim2대</option>
+                                    <option value="3">GiGAeyes i_slim3대</option>
+                                    <option value="4">GiGAeyes i_slim4대</option>
+                                    <option value="5">GiGAeyes i_slim5대</option>
+                                    <option value="6">GiGAeyes i_slim6대</option>
+                                    <option value="7">GiGAeyes i_slim7대</option>
+                                    <option value="8">GiGAeyes i_slim8대</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item mb-2 ">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1"><span class="badge badge-primary">step8</span> KT모바일 결합할인(가족포함)</h5>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-5">
+                                <select class="form-control" name="mob" id="mob">
+                                    <option value="">::가족모바일합산요금::</option>
+                                    <option value="1">22,000원미만</option>
+                                    <option value="2">22,000원이상</option>
+                                    <option value="3">64,900원이상</option>
+                                    <option value="4">108,900원이상</option>
+                                    <option value="5">141,900원이상</option>
+                                    <option value="6">174,900원이상</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+            <div class="col-sm-7">
+            </div>
+          </div>
+      </div>    
+  </body>
+  </html>

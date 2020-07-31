@@ -1,0 +1,78 @@
+ul{list-style: none;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+img{width:100%;}
+
+
+
+/* 네비 카테고리 */
+.navbar > a {width:80px;}
+.navbar-nav .top_call > a{width:230px;}
+.navbar-nav .top_call > a img{position: absolute;
+    top: -31px;
+    right: 42px;
+    width: 200px;
+    height: 150px;
+}
+
+
+.site-section {
+    padding: 3.5em 0;
+}
+
+.subtitle_under_bar{ padding-bottom: 10px;}
+.subtitle_under_bar::after{position:absolute; margin-top:5px; content: ""; display:block; width: 135px; height: 3px; background:#dc3545; transform: translateX(-50%); left:50%;}
+
+.service-2{padding: 20px;}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail {
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+.thumbnail ul{padding:0; list-style: inside;}
+.thumbnail ul li{font-size:15px; margin-top:4px; color:#444;}
+
+
+/* 기업인터넷전화 */
+.container-fluid .glyphicon{font-size:40px; color:#dc3545;}
+.container-fluid h4{margin-top:.5rem;}
+.detail_info h2{border-bottom:1px solid #000; margin-bottom:25px; padding-bottom:10px;}
+.detail_info table {margin-bottom:30px;}
+.nav-item a {color:#444; font-size:19px;}    
+.nav-item a.active {font-weight: bold; color:#000;}
+.tab-content h3 p{float:right; font-size:14px; position: relative; top:15px; color:#dc3545!important;}
+.tab-content h4 p{float:right; font-size:14px; position: relative; top:15px; color:#dc3545!important;}
+.number-list.type2 li{margin-bottom:5px; font-size:18px;}
+.fare-list.type2 li{margin-bottom:5px; font-size:18px;}
+.fare-list.type2 {padding:0;}
+
+
+
+
+/* 퀵메뉴 */
+.quick_menu_box{position: fixed;  top:150px; right:20px;  max-width: 82px; padding:0; z-index: 9999;}
+
+
+/* 상담전화 모바일, 테플릿 안보이게 처리 */
+@media screen and (max-width:992px){
+    .top_call{display: none;}
+}
+
+@media screen and (max-width: 640px) {
+    .iframe_cs{width: 100% !important;}
+    .quick_menu_box{display: none;}
+
+    /*기업전화 테이블 네덜란드 */
+    .table-desc{padding-left: 0 !important;}
+}

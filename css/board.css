@@ -1,0 +1,32 @@
+
+
+
+
+/* 게시판 */
+.board_search_area{overflow: hidden;}
+.board_search_area .search_box{float: right;}
+.search_box select {width:200px; height: 40px; background: #fff url(../img/bg-form-selects.png) no-repeat 100% 50%;border-radius: 0px; padding-left: 20px; border: 1px solid #999; -webkit-appearance: none;-moz-appearance: none;appearance: none; }
+.search_box input {width: 229px; height:40px; border-radius: 0; padding-left: 20px; border: 1px solid #999; margin-right:-5px}
+.search_box button {width: 87px; height: 40px; border-radius: 0; text-align: center; border:0; background-color:#555; }
+.search_box button span {color: #fff;}
+
+.board_list_area {margin:25px 0;}
+.board_list_area table{border-spacing: 0; border-top: 3px solid #555; width: 100%;}
+.board_list_area table thead{background:#f8f8f8;}
+.board_list_area table th {height: 55px; border-right:1px solid #e3e3e3;}
+.board_list_area table th:last-child{border-right: none;}
+.board_list_area table th:nth-child(2){padding-left:10px;}
+
+.board_list_area table td {height: 47px; border-right:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3}
+.board_list_area table td:nth-child(2){padding-left:10px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.board_list_area table td:last-child{border-right: none;}
+.board_list_area table td i {color:gold; font-size: 12px; position: relative; top: -2px; left:3px;}
+.pagi_btn{text-align: center;}
+.pagi_btn > div{display: inline-block;}
+.pagi_btn a{display:block; float: left; width:41px; height: 40px; line-height: 36px; font-size: 18px; color: #666; border:1px solid #ccc; }
+
+
+.pagi_btn a.first_go{text-indent: -9999px;background-image: url(../img/bg-pagination.png); background-repeat: no-repeat; background-position: 0 0;}
+.pagi_btn a.prev_go{text-indent: -9999px;background-image: url(../img/bg-pagination.png); background-repeat: no-repeat; background-position: -40px 0;}
+.pagi_btn a.last_go{text-indent: -9999px;background-image: url(../img/bg-pagination.png); background-repeat: no-repeat; background-position: -120px 0;}
+.pagi_btn a.next_go{text-indent: -9999px;background-image: url(../img/bg-pagination.png); background-repeat: no-repeat; background-position: -80px 0;}
