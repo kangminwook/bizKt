@@ -6,7 +6,7 @@ img{width:100%;}
 
 header{position: absolute; top:0; width: 100%; padding-top:15px;}
   header h1{position: absolute; left:100px; width:100px; z-index: 9999;}
-  header h2{position: absolute; right:70px; width: 200px;top: -25px; z-index: 9999;}
+  header h2{position: absolute; right:70px; width: 200px;top: 20px; z-index: 9999;}
   header h2 img{width:100%;}
   .mainBanner{ /*height: 72vh; */}
   .mainBanner img{width:100%;}

@@ -17,7 +17,7 @@
       </h1>
 
       <h2>
-        <img src="./img/top_call.svg" alt="">
+        <img src="./img/top_call2.svg" alt="">
       </h2>
     </header>
 
@@ -168,7 +168,7 @@
               </div>
             </a>
           </div>
-        </div>
+        </div> 
       </div>
     </div>
     <!-- E : KT비드대리점, 네트워크공사지원, 비즈전문상담, CCTV보안 / 기가 아이즈-->
@@ -178,7 +178,9 @@
     <!-- S : 퀵메뉴 -->
     <ul class='quick_menu_box'>
       <li>
-        <img src="./img/quick_1.svg" alt="">
+        <a href="./subPage_4.html">
+          <img src="./img/quick_1.svg" alt="">
+        </a>
       </li>
       <li>
         <img src="./img/quick_2.svg" alt="">
@@ -372,11 +374,10 @@ $(document).ready(function () {
 		  var mySwiper = new Swiper ('.mainBanner ', {
         init : true , 
         slidesPerView : 1, 
-        centeredSlides : true , 
-        loop : true , 
-        autoPlay:3000,
-        loopedSlides : 0 , 
-        slidesPerGroup : 1 , 
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
 		    pagination: {
 		      el: '.swiper-pagination',
 		      clickable: true,
