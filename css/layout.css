@@ -15,6 +15,12 @@ img{width:100%;}
     height: 150px;
 }
 
+/* 서브페이지 배너 스타일 */
+.jumbotron {
+    background-size: cover !important;
+    padding: 6rem 2rem !important;
+}
+
 
 .site-section {
     padding: 3.5em 0;
@@ -60,8 +66,71 @@ img{width:100%;}
 
 
 
+/* 가입서류 */
+.manualTabMenu{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+.manualTabMenu li {
+    padding:0 6px;
+}
+
+.manualImgBox{
+    display: none;
+    overflow: hidden;
+}
+.manualImgBox.show{
+    display: block;
+}
+.manualImgBox li{
+    
+    margin-bottom:20px;
+    float: left;
+    padding:0 15px;
+    text-align: center;
+}
+
+.manualImgBox li img{
+    width:100%;
+}
+.manualImgBox h4{
+    font-size:1.2rem;
+    margin-bottom: 35px;
+}
+.manualImgBox h4 span{
+    display: inline-block;
+    padding:10px 25px;
+    border-radius: 15px;
+    background: #dc3545;
+    color:#fff;
+    font-size:1.1rem;
+}
+
+
+
 /* 퀵메뉴 */
 .quick_menu_box{position: fixed;  top:150px; right:20px;  max-width: 82px; padding:0; z-index: 9999;}
+
+
+/* 푸터 */
+.footer{
+    background :#1c2331 !important;
+}
+.footer-copyright {
+    background-color: rgba(0,0,0,0.2);
+    color:#fff;
+}
+.footerInfo{
+    color:#fff;
+    font-size:.9rem;
+    text-align: center;
+}
+
+
+
+
 
 
 /* 상담전화 모바일, 테플릿 안보이게 처리 */
