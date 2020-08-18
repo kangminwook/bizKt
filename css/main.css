@@ -88,6 +88,20 @@ header{position: absolute; top:0; width: 100%; padding-top:15px;}
   .quick_menu_box{position: fixed;  top:150px; right:20px;  max-width: 82px; padding:0; z-index: 9999;}
 
 
+  /* 푸터 */
+.footer{
+  background :#1c2331 !important;
+}
+.footer-copyright {
+  background-color: rgba(0,0,0,0.2);
+  color:#fff;
+}
+.footerInfo{
+  color:#fff;
+  font-size:.9rem;
+  text-align: center;
+}
+
   /* 모바일 쿼리 */
   @media screen and (max-width: 640px) {
     .service-2 .icon-wrap{width:80%!important; }
