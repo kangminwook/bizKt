@@ -13,7 +13,7 @@
   <body>
     <header>
       <h1>
-        <img src="./img/logo.svg" alt="">
+        <img src="./img/logo2.svg" alt="">
       </h1>
 
       <h2>
@@ -175,27 +175,7 @@
 
 
     <!-- Footer -->
-    <footer class="footer page-footer font-small unique-color-dark pt-4">
-      <!-- Footer Elements -->
-      <div class="container">
-
-      <!-- Call to action -->
-      <p class="footerInfo">
-          회사명. <span>케이엔에스네트워크</span> &nbsp; 주소. <span>서울시 송파구 충민로 66 가든파이브라이프 패션관 3층</span> &nbsp; 대표. <span>장영일</span> &nbsp; 사업자등록번호. <span>120-11-04698</span> &nbsp;<br> 개인정보책임자. <span>장영일</span> 
-          &nbsp; Tel. <span>080-468-1000 </span> &nbsp; Fax. <span>0303-0204-0101</span> &nbsp; E-mail. <span>help@bizkt.co.kr</span>&nbsp; 
-      </p>
-      <!-- Call to action -->
-
-      </div>
-      <!-- Footer Elements -->
-
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://mdbootstrap.com/"> bizkt.co.kr</a>
-      </div>
-      <!-- Copyright -->
-
-    </footer>
+    <div include-html="./include/footer.html"></div>
     <!-- Footer -->
 
 
@@ -385,6 +365,8 @@
 
 <script type="text/javascript" src="./js/swiper.min.js"></script>
 <script type="text/javascript">
+includeHTML();
+
 // 모달 버튼에 이벤트를 건다.
 $('#openModalBtn').on('click', function(){
 $('#modalBox').modal('show');

@@ -1,3 +1,7 @@
+@import url(font.css);
+@import url(NotoSans.css);
+
+*{font-family:"Noto Sans KR"; font-size:16px; letter-spacing:-0.4px; }
 ul{list-style: none;}
 a{text-decoration: none;}
 a:hover{text-decoration: none;}
@@ -90,7 +94,7 @@ header{position: absolute; top:0; width: 100%; padding-top:15px;}
 
   /* 푸터 */
 .footer{
-  background :#1c2331 !important;
+  background :#222 !important;
 }
 .footer-copyright {
   background-color: rgba(0,0,0,0.2);
