@@ -415,9 +415,8 @@
                     </ul>
                     <h4 class="mb-3">신청 및 문의</h4>
                     <ul class="fare-list type2 text-muted" style="padding:0;">
-                        <li>1. 신청 및 문의 : 02-3484-7000</li>
-                        <li>2. 고장(장애)접수 : 1588-0114, 080-777-0070</li>
-                        <li>3. 상담 문의 : 080-468-1000, 상담 문의 메일주소 : help@bizkt.co.kr</li>
+                        <li>1. 신청 및 문의 : 080-468-1000, 메일주소 : help@bizkt.co.kr</li>
+                        <li>2. 고장(장애)접수 : 1588-0114 또는 국번없이 100</li>
                         <li>4. 1:1 문의 <a class="btn btn-danger" href="./subPage_4.html" onclick="openCounnsel('3CBBB0', '/html/sub/bz_3de000.html', '^www^KT-기업^KT biz 인터넷전화 centrex 1:1문의','_self','3de000');return false;">문의하기</a></li>
                         
                     </ul>
@@ -521,11 +520,11 @@
 
     <!-- S : 퀵메뉴 -->
     <ul class='quick_menu_box'>
-        <li>
+        <!-- <li>
             <a href="./subPage_5.html">
                 <img src="./img/quick_1.svg" alt="">
             </a>
-        </li>
+        </li> -->
         <li>
             <a href="./manual.html">
                 <img src="./img/quick_2.svg" alt="">
@@ -539,7 +538,7 @@
         <!-- <li>
           <img src="./img/quick_4.svg" alt="">
         </li> -->
-        <li>
+        <li class="top_btn">
           <img src="./img/quick_5.svg" alt="">
         </li>
       </ul>
@@ -552,6 +551,7 @@
 
 
   </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
     includeHTML();
 
@@ -559,6 +559,12 @@ $(document).ready(function(){
   $(".nav-tabs a").click(function(){
     $(this).tab('show');
   });
+
+
+  $(".top_btn").click(()=> {
+        let body = $("html, body");
+        body.animate({ scrollTop: 0 }, 500);
+    })
 });
 </script>
 

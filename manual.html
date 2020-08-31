@@ -186,11 +186,11 @@
 
    <!-- S : 퀵메뉴 -->
    <ul class='quick_menu_box'>
-    <li>
+    <!-- <li>
       <a href="./subPage_5.html">
         <img src="./img/quick_1.svg" alt="">
       </a>
-    </li>
+    </li> -->
     <li>
       <img src="./img/quick_2.svg" alt="">
     </li>
@@ -202,7 +202,7 @@
     <!-- <li>
       <img src="./img/quick_4.svg" alt="">
     </li> -->
-    <li>
+    <li class="top_btn">
       <img src="./img/quick_5.svg" alt="">
     </li>
   </ul>
@@ -801,6 +801,18 @@ $('#openModalBtn4_4').on('click', function(){
 $('#closeModalBtn').on('click', function(){
     $('#modalBox').modal('hide');
 });
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+<script>
+
+  $(document).ready(() => {
+    $(".top_btn").click(()=> {
+        let body = $("html, body");
+        body.animate({ scrollTop: 0 }, 500);
+    })
+  })
 </script>
 
 </html>

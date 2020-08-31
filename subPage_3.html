@@ -318,11 +318,9 @@
 
           <h4 class="mb-3">신청 및 문의</h4>
           <ul class="number-list type2 text-muted" style="padding:0;">
-              <li>1. 전화상담신청(서비스 문의, 신청 및 해지): 1588-0114</li>
-              <li>2. 고장(장애)접수 : 1588-0114, 080-789-0099</li>
-              <li>3. GEM 프랜차이즈+ 서비스 문의(문의, 신청, AS신청): 1522-0123</li>
-              <li>4. 상담 문의 : 080-468-1000, 상담 문의 메일주소 : help@bizkt.co.kr</li>
-              <li>5. 1:1 문의 <a class="btn btn-danger" href="./subPage_4.html" onclick="openCounnsel('3CBBB0', '/html/sub/bz_3de000.html', '^www^KT-기업^KT biz 인터넷전화 centrex 1:1문의','_self','3de000');return false;">문의하기</a></li>
+            <li>1. 신청 및 문의 : 080-468-1000, 메일주소 : help@bizkt.co.kr</li>
+            <li>2. 고장(장애)접수 : 1588-0114 또는 국번없이 100</li>
+            <li>3. 1:1 문의 <a class="btn btn-danger" href="./subPage_4.html" onclick="openCounnsel('3CBBB0', '/html/sub/bz_3de000.html', '^www^KT-기업^KT biz 인터넷전화 centrex 1:1문의','_self','3de000');return false;">문의하기</a></li>              
           </ul>
          
                     
@@ -354,7 +352,7 @@
     <!-- <li>
       <img src="./img/quick_4.svg" alt="">
     </li> -->
-    <li>
+    <li class="top_btn">
       <img src="./img/quick_5.svg" alt="">
     </li>
   </ul>
@@ -366,14 +364,19 @@
   <!-- Footer -->
 
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
 <script>
     includeHTML();
 
     $(document).ready(function(){
-  $(".nav-tabs a").click(function(){
-    $(this).tab('show');
-  });
-});
+      $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+      });
+      $(".top_btn").click(()=> {
+            let body = $("html, body");
+            body.animate({ scrollTop: 0 }, 500);
+        })
+    });
 </script>
 
 </html>
