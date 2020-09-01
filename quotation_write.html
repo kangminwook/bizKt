@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>Biz KT - 간편신청서 작성하기</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./css/board.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script src="./js/includeHTML.js"></script>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div include-html="./include/header.html"></div> 
+    <!-- header -->
+
+    <div class="jumbotron" style="background:url(./img/pageTitleBanner4.jpg) no-repeat center; background-size: cover;">
+      <div class="container text-center">
+        <h1>간편신청서</h1>   
+        <p>궁금한 사항은 언제든지 문의주세요.</p>    
+      </div>
+    </div>
+
+
+
+    <div class="site-section">
+      <div class="container-fluid container">
+        <div class='qna_board_box'>
+          <form action="" name="" method="" enctype="multipart/form-data">
+            <div class="list-group-item mb-2 ">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">
+                    <!-- <span class="badge badge-primary">step5</span> -->
+                     인터넷 속도 선택
+                </h5>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="form-check form-check-inline">
+                            <select class="form-control" name="fax_in" id="fax_in" style="margin-right: 8px;">
+                                <option value="">::인터넷 속도 선택::</option>
+                            </select>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="wifi" value="Y" id="">
+                            <label for="wifi" class="form-check-label" title="와이파이 필요">와이파이 필요</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="list-group-item mb-2 ">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">
+                    <!-- <span class="badge badge-primary">step5</span> -->
+                    TV 상품 선택
+                </h5>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="form-check form-check-inline">
+                            <select class="form-control" name="fax_in" id="fax_in" style="margin-right: 8px;">
+                                <option value="">::TV 상품 선택::</option>
+                            </select>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="" value="Y" id="">
+                            <label for="" class="form-check-label" title="일반 셋탑">일반 셋탑</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="" value="Y" id="">
+                            <label for="" class="form-check-label" title="기가지니 셋탑">기가지니 셋탑</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group-item mb-2 ">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">
+                    <!-- <span class="badge badge-primary">step5</span> -->
+                    일반 전화
+                </h5>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="form-check form-check-inline">
+                            <select class="form-control" name="fax_in" id="fax_in" style="margin-right: 8px;">
+                                <option value="">::일반 전화 선택::</option>
+                            </select>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="rotate" value="Y" id="rotate">
+                            <label for="rotate" class="form-check-label" title="회전">회전</label>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group-item mb-2">
+                <p>
+                    선택하신 상품의 이용요금은
+                </p>
+                <p>
+                    <label>
+                        <input type="text"> 원 이며
+                    </label>
+                
+                    <label for="">
+                        최초 설치비
+                        <input type="text">
+                        입니다.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        사용금액은
+                        <input type="text">원입니다.
+                    </label>
+                </p>
+
+                
+            </div>
+           
+            <h6 class="text-danger mt-4 mb-4">
+                * 바로신청을 원하시면 아래 정보를 입력해주세요.
+            </h6>
+
+            <table class="table board dir-vertical division">
+                <caption class="invisible">Biz kt 간편신청서</caption>
+                <tbody>
+                    <tr>
+                        <th>성명</th>
+                        <td>
+                            <label for="userName">
+                                <input type="text" name="userName" id="userName">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>주민번호</th>
+                        <td>
+                            <label for="">
+                                <input type="text" name="" id="" maxlength="6">
+                                -
+                                <input type="text" name="" id="" maxlength="7">
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>설치주소</th>
+                        <td>
+                            <label for="userAddr">
+                                <input type="text" name="userAddr" id="userAddr">
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>휴대폰</th>
+                        <td>
+                            <label for="userPhone">
+                                <input type="text" name="userPhone" id="userPhone">
+                            </label>
+                            <label for="telecom">
+                                <select id="telecom" name="mobileCorp" title="통신사">
+                                    <option value="">통신사 선택</option>
+                                    <option value="SKT">SKT</option>
+                                    <option value="KTF">KT</option>
+                                    <option value="LGT">LG U+</option>
+                                    <option value="SKM">SKT 알뜰폰</option>
+                                    <option value="KTM">KT 알뜰폰</option>
+                                    <option value="LGM">LG U+ 알뜰폰</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>은행명</th>
+                        <td>
+                            <label for="">
+                                <input type="text" name="" id="">
+                            </label>
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>자동이체 계좌</th>
+                        <td>
+                            <label for="">
+                                <input type="text" name="" id="">
+                            </label>
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>이메일</th>
+                        <td>
+                            <label for="userEmail">
+                                <input type="email"" name="userEmail" id="userEmail">
+                            </label>
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>설치희망일</th>
+                        <td>
+                            <label for="">
+                                <input type="text"" name="" id="">
+                            </label>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">신청완료</button>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+    
+   
+    <!-- S : 퀵메뉴 -->
+    <ul class='quick_menu_box'>
+        <li>
+            <a href="./subPage_4.html">
+                <img src="./img/quick_1.svg" alt="">
+            </a>
+        </li>
+        <li>
+          <a href="./manual.html">
+            <img src="./img/quick_2.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="./auto.html">
+            <img src="./img/quick_3.svg" alt="">
+          </a>
+        </li>
+        <!-- <li>
+          <img src="./img/quick_4.svg" alt="">
+        </li> -->
+        <li>
+          <img src="./img/quick_5.svg" alt="">
+        </li>
+      </ul>
+      <!-- E : 퀵메뉴 --> 
+
+
+      <!-- Footer -->
+      <div include-html="./include/footer.html"></div>
+      <!-- Footer -->
+
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+<script>
+    includeHTML();
+
+    $(document).ready(function(){
+      $(".top_btn").click(()=> {
+            let body = $("html, body");
+            body.animate({ scrollTop: 0 }, 500);
+        })
+    });
+</script>
+
+</html>

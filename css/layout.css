@@ -12,7 +12,7 @@ img{width:100%;}
 
 
 /* 네비 카테고리 */
-
+.navbar-nav {margin:0 auto;}
 @media (min-width:920px){
     header{background:#222!important;}
     .navbar {width:1200px; margin:0 auto; padding-left:20px; padding-right: 20px;}
@@ -96,12 +96,17 @@ header .nav-item a{color:#fff !important;}
 /* 가입서류 */
 .manualTabMenu{
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    margin:0 auto;
     margin-bottom: 55px;
+    width:750px;
 }
 .manualTabMenu li {
     padding:0 6px;
+    margin-bottom:5px;
+    
 }
 
 .manualImgBox{
@@ -171,4 +176,13 @@ header .nav-item a{color:#fff !important;}
 
     /*기업전화 테이블 네덜란드 */
     .table-desc{padding-left: 0 !important;}
+
+    /* 메뉴얼 */
+    .manualTabMenu {
+        width:100%;
+        padding-left: 0;
+    }
+    .manualImgBox{
+        padding-left:0;
+    }
 }
